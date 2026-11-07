@@ -1,0 +1,55 @@
+# Bank Risk Assessment: Risk Register
+
+A hands-on exercise in cybersecurity risk assessment: evaluating the threats to a commercial bank's funds and prioritizing them with a risk register.
+
+## Scenario
+
+I joined a cybersecurity team at a commercial bank that was assessing its operating environment. My task was to evaluate five recorded risks to the bank's funds, score each one, and rank them so the team knows where to focus its resources.
+
+## Operating environment
+
+- Coastal location with a low crime rate
+- 100 on-premises and 20 remote employees handling data
+- 2,000 individual and 200 commercial customer accounts
+- Services marketed through a sports team and local businesses
+- Strict financial regulations, including daily cash requirements
+
+## Method
+
+Risk is calculated as:
+
+**Likelihood x Severity = Priority**
+
+- **Likelihood (1-3):** how often the risk could realistically occur
+- **Severity (1-3):** how badly the bank would be affected in terms of finances, operations, regulations, and reputation
+- **Priority (1-9):** the product of the two, used to rank the risks
+
+## Risk Register
+
+| Asset | Risk | Description | Likelihood | Severity | Priority |
+|---|---|---|---|---|---|
+| Funds | Business email compromise | An employee is tricked into sharing confidential information. | 3 | 3 | 9 |
+| Funds | Compromised user database | Customer data is poorly encrypted. | 3 | 3 | 9 |
+| Funds | Financial records leak | A database server of backed up data is publicly accessible. | 2 | 3 | 6 |
+| Funds | Theft | The bank's safe is left unlocked. | 1 | 3 | 3 |
+| Funds | Supply chain disruption | Delivery delays due to natural disasters. | 1 | 3 | 3 |
+
+## Notes
+
+The bank's 120 employees, including 20 remote workers, create many opportunities for human error, making phishing and email compromise likely. Poorly encrypted customer data and exposed backup servers could leak records and trigger regulatory fines. Although the coastal location has low crime, natural disasters and unlocked safes still threaten the bank's funds and daily operations.
+
+## Reasoning behind the scores
+
+- **Business email compromise and compromised user database (9):** both are likely given the number of people and systems handling data, and both could cause major financial loss, regulatory penalties, and reputational damage.
+- **Financial records leak (6):** less likely than the two above, but a leak would be highly damaging to customers and subject to heavy fines.
+- **Theft and supply chain disruption (3):** unlikely given the low crime rate and the rarity of hurricanes, but severe if they happen because they hit funds and daily operations directly.
+
+## Takeaways
+
+- Human-driven risks (phishing, weak data protection) rank highest, so employee training and encryption should come first.
+- Low-likelihood risks can still be high-severity, so they need a plan even if they are not the first priority.
+- A risk register turns a long list of threats into a ranked list the team can act on.
+
+## Skills demonstrated
+
+Risk assessment · Risk prioritization · NIST Cybersecurity Framework concepts · Security documentation
